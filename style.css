@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+#container {
+  width: 360px;
+  margin: auto;
+  padding: 0 24px;
+}
+#profile {
+  text-align: center;
+}
+#profile img {
+  width: 112px;
+  margin: auto;
+}
+#profile p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+        /* Bolinha branca */
+
+#switch{
+position: relative;
+width: 64;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white url(./assets/moon-stars.svg) no-repeat center;
+          /* Cor da  imagem */
+  border: 0;
+  border-radius: 50%;
+
+  position:absolute;
+        /* Sobreposição de camadas */
+  z-index: 1;
+        /* Sobrepoen o elemento */
+  transform: translate(-50%);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: white rgb(255, 255,);
+  border: 3px solid;
+          /* Tamando da e espessura da borda*/
+  backdrop-filter: blur(4px);
+
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+          /* transforma as bordas circulares*/
+}
+
+/* links */
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+          /* Muda o tamanho dos elementos */
+}
+
+ul li a {
+  border: 1px solid red;
+  display: flex;
+          /* Possiveis formas para os elementos */
+  align-items: center;
+          
+  justify-content: center;
+          /* Dar distancia aos elementos */
+  padding: 16px 24px;
+          /* Muda o tamanho dos elementos */
+
+  background: rgba(102, 92, 160, 0.466);
+  border: 1px solid rgba(50, 17, 236, 0.466);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: backgraund 0.2s;
+}
+ul li a:hover {
+  background: rgba(102, 92, 160, 0.466);
+  border: 1.5px solid white;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  padding: 24px 0;
+          
+  font-size: 24px;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+}
+          /* ícones das redes sociais */
+ion-icon:hover {
+  cursor: grab;
+          /*Muda o imagem do cursor */
+  background: rgb(102, 92, 160, 0.466);
+
+    border: 2.5px solid white;
+          /*Tamanho da borda do ínones pequenos */
+  border-radius: 15%;
+  /*  */
+  transition: 1.5s ease;
+          /* Transition faz a transição do estado dos elementos */
+  transform: rotate(250deg);
+          /* Transforma o estado dos elemento */
+}
